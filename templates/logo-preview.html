@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOTSKIE - Play Store Branding Preview</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: #090d16;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #ffffff;
+      padding: 20px;
+    }
+    
+    .preview-container {
+      background: #0f172a;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 36px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(34, 197, 94, 0.15);
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* COMPLETE STANDALONE PLAY STORE LOGO CONTAINER (Icon + Integrated Label) */
+    .playstore-logo-card {
+      width: 260px;
+      height: 300px;
+      background: linear-gradient(145deg, #0d1f18, #05100c);
+      border: 2px solid rgba(34, 197, 94, 0.3);
+      border-radius: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.15);
+      padding: 24px;
+      overflow: hidden;
+    }
+
+    /* Subtle background tech grid inside logo */
+    .playstore-logo-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(34, 197, 94, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(34, 197, 94, 0.03) 1px, transparent 1px);
+      background-size: 20px 20px;
+      border-radius: 48px;
+      z-index: 0;
+    }
+
+    /* SILVER ET HEAD ICON */
+    .silver-et-head {
+      width: 76px;
+      height: 84px;
+      background: linear-gradient(135deg, #f8fafc, #cbd5e1, #475569);
+      border-radius: 50% 50% 42% 42%;
+      position: relative;
+      z-index: 1;
+      box-shadow: inset 0 3px 6px rgba(255,255,255,0.7), 0 6px 14px rgba(0,0,0,0.5);
+      margin-bottom: 14px;
+    }
+    .et-eye-left, .et-eye-right {
+      position: absolute;
+      top: 30px;
+      width: 11px;
+      height: 16px;
+      background: #000000;
+      border-radius: 50%;
+      box-shadow: inset 0 1px 2px rgba(255,255,255,0.3);
+    }
+    .et-eye-left { left: 16px; }
+    .et-eye-right { right: 16px; }
+
+    /* INTEGRATED LABEL STYLING INSIDE THE LOGO */
+    .logo-text-group {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.1;
+    }
+    .logo-brand-name {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #ffffff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    }
+    .logo-brand-sub {
+      font-size: 11px;
+      font-weight: 700;
+      color: #34d399;
+      letter-spacing: 1.5px;
+      text-transform: lowercase;
+      margin-top: 3px;
+    }
+
+    .badge-tag {
+      margin-top: 20px;
+      background: rgba(34, 197, 94, 0.15);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .back-btn {
+      margin-top: 16px;
+      background: #334155;
+      color: #f8fafc;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .back-btn:hover {
+      background: #475569;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="preview-container">
+    
+    <!-- STANDALONE LOGO CARD (Icon + Text Integrated) -->
+    <div class="playstore-logo-card">
+      <div class="silver-et-head">
+        <div class="et-eye-left"></div>
+        <div class="et-eye-right"></div>
+      </div>
+      
+      <div class="logo-text-group">
+        <div class="logo-brand-name">TOTSKIE</div>
+        <div class="logo-brand-sub">tech solutions</div>
+      </div>
+    </div>
+    
+    <div class="badge-tag">Play Store / Social Branding Ready</div>
+    
+    <a href="index.html" class="back-btn">← Back to POS Register</a>
+  </div>
+
+</body>
+</html>

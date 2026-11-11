@@ -1,0 +1,11 @@
+{
+  "name": "Totskie Botika POS",
+  "short_name": "Botika POS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a7d4b",
+  "icons": [
+    {"src": "/static/botika_icon.svg", "sizes": "any", "type": "image/svg+xml"}
+  ]
+}
